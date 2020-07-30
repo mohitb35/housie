@@ -3,18 +3,18 @@ import './Board.css';
 
 import Row from '../Row';
 
+function generateRows(rowCount) {
+	let rows = [];
+	for (let i = 0; i < rowCount; i++){
+		rows.push(<Row key={i} rowIndex={i}/>)
+	}
+	return rows;
+}
+
 const Board = () => {
 	return (
-		<div class="board">
-			<Row />
-			<Row />
-			<Row />
-			<Row />
-			<Row />
-			<Row />
-			<Row />
-			<Row />
-			<Row />
+		<div className="board">
+			{generateRows(9)}
 		</div>
 	);
 }

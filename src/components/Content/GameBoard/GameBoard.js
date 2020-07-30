@@ -5,7 +5,7 @@ import GameDetails from '../GameDetails';
 
 const GameBoard = () => {
 	return (
-		<section class="game-board">
+		<section className="game-board">
 			<GameDetails />
 			<Board />
 		</section>

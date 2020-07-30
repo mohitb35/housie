@@ -1,12 +1,22 @@
 import React from 'react';
 import './Square.css';
 
-const Square = () => {
-	return (
-		<div class="square">
-			10
-		</div>
-	);
+class Square extends React.Component {
+	state = {
+		isCalled: false,
+		last: false
+	};
+
+	render(){
+		let { isCalled, last } = this.state;
+		let classes = `square ${isCalled ? "called" : ""} ${last ? "last" : ""}`
+
+		return (
+			<div className={classes}>
+				{this.props.squareIndex}
+			</div>
+		);
+	}
 }
 
 export default Square;
