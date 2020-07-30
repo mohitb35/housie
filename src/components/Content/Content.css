@@ -1,10 +1,16 @@
 main {
-	margin: 2rem auto;
+	margin: 0;
+	width: 100%;
+	max-width: 1000px;
 	overflow: scroll;
 	flex: 1;
 	display: flex;
-	max-width: 1000px;
-	width: 90%;
 	flex-wrap: wrap;
 }
 
+@media only screen and (min-width: 768px){
+	main{
+		margin: 2rem auto;
+		width: 90%;
+	}
+}
