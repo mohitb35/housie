@@ -4,7 +4,7 @@ import './Square.css';
 const Square = () => {
 	return (
 		<div class="square">
-			1
+			10
 		</div>
 	);
 }
