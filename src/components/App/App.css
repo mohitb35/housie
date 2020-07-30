@@ -1,0 +1,19 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body, #root {
+	height: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #F5F5F5;
+}
+
+#app {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
