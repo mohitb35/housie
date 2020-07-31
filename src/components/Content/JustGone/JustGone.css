@@ -1,0 +1,30 @@
+.just-gone{
+	background-color: #BADDDF;
+	padding: 0.5rem 1rem 1rem;
+	display: flex;
+	flex-direction: column;
+	/* gap: 0.5rem; */
+	/* As gap is not supported by all browsers, replaced this by using a margin above the .numbers div */
+
+}
+
+.numbers{
+	margin-top: 0.5rem;
+	display: flex;
+	/* gap: 0.5rem; */
+}
+
+.number {
+	margin-right: 0.5rem;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+@media only screen and (min-width: 768px){
+	.just-gone {
+		padding: 1rem 2rem;
+	}
+}

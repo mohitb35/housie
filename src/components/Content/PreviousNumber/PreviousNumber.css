@@ -1,0 +1,16 @@
+.previous-number{
+	color: black;
+	height: 3rem;
+	width: 3rem;
+	font-size: 1.5rem;
+}
+
+.previous-number:nth-last-of-type(2){
+	background-color: #FFD600;
+	border: 3px solid #A78E0E;
+}
+
+.previous-number:last-of-type{
+	background-color: #8FFF00;
+	border: 3px solid #60AA02;
+}

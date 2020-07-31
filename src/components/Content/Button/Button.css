@@ -1,0 +1,36 @@
+.button {
+	text-align: center;
+	padding-right: 0.5rem;
+}
+
+.button:last-of-type{
+	padding-right: 0;
+}
+
+.button button{
+	padding: 0.5rem 1rem;
+	font-size: 0.9rem;
+	background-color: #FFFFFF;
+	border: 2px solid #FF6B00;
+	outline: none;
+	border-radius: 1rem;
+	cursor: pointer;
+	/* box-sizing: border-box; */
+}
+
+.button button:hover {
+	background-color: #FF6B00;
+	color: #FFFFFF;
+}
+
+@media only screen and (min-width: 768px){
+	.button {
+		width: 100%;
+		font-size: 1rem;
+	}
+
+	.button button{
+		margin: 1rem 0 0 0;
+		width: 100%;
+	}
+}

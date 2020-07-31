@@ -1,6 +1,31 @@
 .side-bar {
-	/* width: 300px;
-	height: 850px; */
-	background: blue;
+	background: #56CCF2;
 	flex: 1 1 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.buttons {
+	padding: 0.5rem 1rem;
+	display: flex;
+	justify-content: space-between;
+	/* gap: 0.5rem;  */
+	/* As gap is not supported by all browsers, replaced this by using a margin for the buttons */
+}
+
+@media only screen and (min-width: 768px){
+	.side-bar{
+		padding: 2rem 0;
+		justify-content: space-between;
+	}
+
+	.buttons {
+		padding: 0 2rem;
+		flex-direction: column;
+		align-items: center;
+		margin: 0;
+		/* gap: 1rem; */
+		/* As gap is not supported by all browsers, replaced this by using a margin for the buttons */
+	}
 }

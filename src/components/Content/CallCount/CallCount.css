@@ -1,0 +1,10 @@
+.call-count{
+	padding: 0.5rem 1rem ;
+	font-weight: 700;
+}
+
+@media only screen and (min-width: 768px){
+	.call-count {
+		padding: 1rem 2rem;
+	}
+}
