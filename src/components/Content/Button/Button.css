@@ -18,9 +18,13 @@
 	/* box-sizing: border-box; */
 }
 
-.button button:hover {
+.button button:not([disabled]):hover {
 	background-color: #FF6B00;
 	color: #FFFFFF;
+}
+
+.button button[disabled]{
+	cursor: not-allowed;
 }
 
 @media only screen and (min-width: 768px){

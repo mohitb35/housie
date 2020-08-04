@@ -4,8 +4,8 @@ import './Button.css';
 
 const Button = (props) => {
 	return (
-		<div className="button">
-			<button>{props.text}</button>
+		<div id={props.type} className="button" onClick={props.action}>
+			<button disabled={props.isDisabled}>{props.text}</button>
 		</div>
 	);
 }

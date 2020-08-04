@@ -2,13 +2,13 @@ import React from 'react';
 import './Square.css';
 
 class Square extends React.Component {
-	state = {
+	/* state = {
 		isCalled: false,
 		last: false
-	};
+	}; */
 
 	render(){
-		let { isCalled, last } = this.state;
+		let { isCalled, last } = this.props;
 		let classes = `square ${isCalled ? "called" : ""} ${last ? "last" : ""}`
 
 		return (

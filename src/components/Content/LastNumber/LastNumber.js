@@ -3,11 +3,14 @@ import React from 'react';
 import './LastNumber.css'
 
 const LastNumber = (props) => {
-	return (
-		<div className="last-number number">
-			{props.value}
-		</div>
-	)
+	if(props.value){
+		return (
+			<div className="last-number number">
+				{props.value}
+			</div>
+		)
+	}
+	return null;
 };
 
 export default LastNumber;

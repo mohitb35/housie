@@ -4,11 +4,11 @@ import CallCount from '../CallCount';
 
 import './History.css';
 
-const History = () => {
+const History = (props) => {
 	return (
 		<div className="history">
-			<JustGone />
-			<CallCount count="4"/>
+			<JustGone history={props.history} />
+			<CallCount count={props.callCount}/>
 		</div>
 	)
 };
